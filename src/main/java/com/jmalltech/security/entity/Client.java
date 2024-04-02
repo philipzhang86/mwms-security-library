@@ -1,4 +1,5 @@
-package com.jmalltech.entity;
+package com.jmalltech.security.entity;
+
 
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.Getter;
@@ -8,11 +9,11 @@ import lombok.ToString;
 import java.io.Serializable;
 import java.util.Date;
 
-@Getter
+@TableName(value = "mwms_client", schema = "public")
 @Setter
-@TableName(value = "mwms_staff", schema = "public")
+@Getter
 @ToString
-public class Staff implements Serializable, IUser{
+public class Client implements Serializable, IUser{
     @TableId(type = IdType.AUTO)
     private Long id;
 
@@ -22,7 +23,25 @@ public class Staff implements Serializable, IUser{
 
     private String email;
 
-    private StaffRole role;
+    @TableField(value = "company_name")
+    private String companyName;
+
+    @TableField(value = "area_code")
+    private String areaCode;
+
+    private String phone;
+
+    private String address;
+
+    private String city;
+
+    private String state;
+
+    private String country;
+
+    private Long createdById;
+
+    private Long updatedById;
 
     @TableField(value = "created_date", fill = FieldFill.INSERT)
     private Date createdDate;

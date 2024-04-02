@@ -1,4 +1,4 @@
-package com.jmalltech.util;
+package com.jmalltech.security.util;
 
 
 import com.auth0.jwt.JWT;
@@ -6,7 +6,7 @@ import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.Claim;
 import com.auth0.jwt.interfaces.DecodedJWT;
-import com.jmalltech.entity.IUser;
+import com.jmalltech.security.entity.IUser;
 
 import java.util.Date;
 import java.util.HashMap;

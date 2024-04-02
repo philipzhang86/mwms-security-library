@@ -1,4 +1,4 @@
-package com.jmalltech.util;
+package com.jmalltech.security.util;
 
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package com.jmalltech.util;
+package com.jmalltech.security.util;
 
 
 import com.auth0.jwt.interfaces.Claim;

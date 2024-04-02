@@ -1,4 +1,4 @@
-package com.jmalltech.entity;
+package com.jmalltech.security.entity;
 
 public interface IUser {
     Long getId();
