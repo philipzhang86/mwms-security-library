@@ -1,4 +1,4 @@
-package com.jmalltech.security.entity;
+package com.jmalltech.entity;
 
 import com.baomidou.mybatisplus.annotation.EnumValue;
 
