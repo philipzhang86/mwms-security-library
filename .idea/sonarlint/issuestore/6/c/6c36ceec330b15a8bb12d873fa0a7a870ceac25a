@@ -1,5 +1,8 @@
 
-f	java:S106"+Replace this use of System.out by a logger.(‡®éÕJ$df0f87e6-cd8b-43b6-ac9f-9090af99c4d2
-k	java:S106"+Replace this use of System.out by a logger.(¶ìŞ¢ûÿÿÿÿJ$df644da7-2be7-4daf-90ad-ea8041776a48
-f	java:S106 "+Replace this use of System.out by a logger.(ÉÕ‰úJ$514c7047-7bdd-4c1b-9341-3e2ef2776bb5
-k	java:S106$"+Replace this use of System.out by a logger.(ÅëÛêúÿÿÿÿJ$52c96420-9360-439f-b6b4-5d9e71046e41
+‘
+java:S1192'"IDefine a constant instead of duplicating this literal "username" 3 times.(ø¨«³øÿÿÿÿ8Ñ–Şœì1J$1b2f11ef-82ab-411b-9958-44b0588d8799
+m	java:S106""+Replace this use of System.out by a logger.(‡®éÕ8«õ˜ì1J$6c85ce9b-a3e3-4439-84bd-cf151a20e572
+r	java:S106("+Replace this use of System.out by a logger.(¶ìŞ¢ûÿÿÿÿ8İ–Şœì1J$c914f7b3-61f0-4da3-81f5-c816c71042f8
+r	java:S106)"+Replace this use of System.out by a logger.(ªÙÍøÿÿÿÿ8Ş–Şœì1J$e3f25758-38c6-4726-91c5-28aaf4b8b58b
+m	java:S106*"+Replace this use of System.out by a logger.(ÉÕ‰ú8Ş–Şœì1J$67f80f8d-0c14-4093-8d3c-15ff6c79e7ac
+r	java:S106."+Replace this use of System.out by a logger.(ÅëÛêúÿÿÿÿ8ß–Şœì1J$53315a49-2165-4575-a8ca-b81f13e0bfe7

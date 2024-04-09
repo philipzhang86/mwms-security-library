@@ -18,7 +18,15 @@ public class JwtTokenFilter extends GenericFilterBean {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         HttpServletRequest httpRequest = (HttpServletRequest) request;
+        HttpServletResponse httpResponse = (HttpServletResponse) response;
         String authHeader = httpRequest.getHeader("Authorization");
+
+        // 对于预检请求，直接放行
+        if ("OPTIONS".equalsIgnoreCase(httpRequest.getMethod())) {
+            httpResponse.setStatus(HttpServletResponse.SC_OK);
+            chain.doFilter(request, response);
+            return;
+        }
 
         if (authHeader != null && authHeader.startsWith("Bearer ")) {
             // 提取实际的token
@@ -28,7 +36,9 @@ public class JwtTokenFilter extends GenericFilterBean {
 
             if (claims != null) {
                 String role = claims.get("role").asString();
+                httpRequest.setAttribute("username", claims.get("username").asString());
                 System.out.println("Role: " + role);
+                System.out.println("Username: " + httpRequest.getAttribute("username"));
                 System.out.println("Original Request URI: " + httpRequest.getRequestURI());
                 // 从请求URI中移除上下文路径
                 String contextPath = httpRequest.getContextPath();
